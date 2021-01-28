@@ -1,7 +1,9 @@
 <?php
 
 namespace Cvar1984\CookieStealer\Modules;
-class Singleton
+use Cvar1984\CookieStealer\Modules\Interface\SingletonInterface;
+
+class Singleton implements SingletonInterface
 {
     private static $instances;
     
